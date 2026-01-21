@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+header{
+    display: flex;
+    background-color: #555;
+}
+
+body{
+  margin: 0;
+}
+
+.material-symbols-outlined{
+    font-size: 30px;
+    color: rgba(0, 206, 209);
+    padding-right: 1%;
+    padding-left: 1%;
+
+}
+
+nav a{
+    flex: 1;
+    color: #EEE;
+    align-items: center;
+    margin: 0;
+    font-family: 'Biryani';
+    text-decoration: none;
+    padding: 10px;
+}
+
+#Home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Biryani';
+    background-image: url(Images/pexels-kevin.jpg);
+    margin: 0;
+    background-size: cover;
+    
+}
+
+article{
+    height: 100vh;
+    font-family: 'Biryani';
+    margin: 0;
+    background-color: #555;
+}
+
+footer{
+    height: 100vh;
+    font-family: 'Biryani';
+    margin: 0;
+    background-color: #555;
+}
+
+.text{ 
+    background-color: rgba(39, 39,  36, 0.7);
+    padding: 1% 6%;
+}
+
+.a{
+    color: white;
+}
+
+.b{
+    color: rgba(0, 206, 209);
+}
+
+P{
+    color: white;
+    font-family: 'Biryani';
+}
+
+.c{
+    color: #EEE;
+    margin: 0%;
+    flex: 2;
+    font-family: 'Biryani';
+}
+
+.contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1330px;
+    margin: 0;
+    scroll-margin-top: 60px;
+}
+
+.blog{
+    color: white;
+    font-family: 'Biryani';
+}
+
+#n{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#l{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page{
+    color: rgba(0, 206, 209);
+    font-family: 'Biryani';
+}
+
+.h{
+    color: rgba(0, 206, 209);
+    font-family: 'Biryani';
+}
+
+.about{
+    height: 60vh;
+}
+
+
+
+
+
+

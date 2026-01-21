@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+body{
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+       "a header"
+       "b table"
+       "c c";
+    gap: 5px;
+    padding: 0.5px;
+    background-color: #1a1a1a;
+    color: aqua;
+    background-image: url(Images/Bakgrunds\ bild.jpg);
+    background-size: cover;
+    height: 99.8vh;
+
+}
+
+#a{
+    grid-area: a;
+    background-color: black;
+    color: aqua;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    height: 160px
+}
+
+#b{
+    grid-area: b;
+    background-color: black;
+    color: aqua;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    width: 70%;
+  
+}
+
+#c{
+    grid-area: c;
+    background-color: black;
+    color: aqua;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    height: 110px;
+    width: 77%;
+    align-self: end;
+}
+
+header{
+    grid-area: header;
+    background-color: black;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    height: 95px;
+    width: 32%;
+    justify-self: end;
+}
+
+table{
+    background: black;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+th{
+    color: aqua;
+    border-bottom: 2px solid #FFFFFF;
+    border-right: 2px solid #FFFFFF;
+}
+
+th, td{
+    padding: 10px;
+}
+
+#spel{
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+       "f h"
+       "g g";
+    gap: 5px;
+    height: 99.8vh;
+}
+
+#f{
+    grid-area: f;
+    background-color: black;
+    color: aqua;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    margin-bottom: 0;
+    height: 95px;
+    width: 70%;
+    text-align: center;
+}
+
+#g{
+    grid-area: g;
+    background-color: black;
+    color: aqua;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    width: 70%;
+    justify-content: center;
+    
+}
+
+#h{
+    grid-area: h;
+    justify-self: end;
+    background-color: black;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    height: 95px;
+    width: 32%;
+}
+
+nav a{
+    color:aqua;
+}
+
+h1, h2, h3{
+    font-family: 'Michroma', sans-serif;
+}
+
+figure{
+    text-align: center;
+}
+
+figcaption{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.material-symbols-outlined{
+    display:inline-block;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+

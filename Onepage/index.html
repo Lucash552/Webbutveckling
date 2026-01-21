@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Webdev</title>
+</head>
+<body>
+    <header>
+        <span class="material-symbols-outlined rocket">rocket_launch</span>
+        <p class="c">Company &amp; CO</p> 
+        <nav>
+            <a href="#Home">HOME</a>
+            <a href="#About">ABOUT</a>
+            <a href="#Blog">BLOG</a>
+            <a href="#Contact">CONTACT</a>
+        </nav>
+    </header>
+    
+    <section id="Home">
+        <div class="text">
+        <h1><span class="a">WEB</span><span class="b">DEVELOPMENT</span></h1>
+        <p>"IF you think math is hard, try web design."
+            <br>-Trish Parr</p>
+        </div>
+    </section>
+   
+    <article id="About">
+    <div class="about">
+        <h1><span class="page">ABOUT</span> <span class="highlight">LOREM</span><span class="h">IPSUM</span></h1>
+        
+      <p id="p" >
+            Consectetur adipisicing elit. Fugit vero debitis iure consectetur obcaecati numquam error placeat voluptatem nostrum omnis amet aliquid ipsa, nobis tempore, molestias labore ipsum sed. Quaerat?<br>
+            Consequuntur, porro quaerat similique. Porro dicta quaerat non, corporis voluptates illo vel aut atque, iste consequuntur exercitationem neque pariatur consequatur autem veritatis architecto. Eligendi dolorum, quisquam iure itaque accusantium placeat. 
+        </p>
+    </div>
+    </article>
+
+   <section id="Contact">
+    <h1 class="page-title">
+        <span id="n" class="highlight">CONTACT US</span>
+    </h1>
+    
+    <div class="contact-section">
+    <form action="#" method="POST" class="contact-form">
+        
+        <div class="form-group">
+            <label for="fname">Förnamn:</label><br>
+            <input type="text" id="fname" name="first_name" required>
+        </div>  
+        
+        <div class="form-group">
+            <label for="lname">Efternamn:</label><br>
+            <input type="text" id="lname" name="last_name" required>
+        </div>  
+        
+        <div class="form-group">
+            <label for="gadress">Gatuadress:</label><br>
+            <input type="text" id="gadress" name="street-address" required>
+        </div>  
+        
+        <div class="form-group">
+            <label for="zip">Postnr:</label><br>
+            <input type="text" id="zip" name="zip-code" required>
+        </div>  
+
+        <div class="form-group">
+            <label for="city">Ort:</label><br>
+            <input type="text" id="city" name="city" required>
+        </div>  
+
+        <div class="form-group radio-group">
+            <label>Jag är:</label>
+        </div>
+        
+        <input type="radio" id="man" name="gender" value="Man" checked>
+        <label for="man">Man</label>
+         
+        <input type="radio" id="kvinna" name="gender" value="Kvinna" checked>
+        <label for="kvinna">Kvinna</label>
+         
+        <input type="radio" id="alien" name="gender" value="Alien" checked>
+        <label for="alien">Alien</label>
+         
+        <input type="radio" id="annat" name="gender" value="Annat" checked>
+        <label for="annat">Annat</label>
+    </div>
+</div>
+
+<div class="form-group select-group" id="l">
+    <label for="subject-like">Jag gillar särskilt:</label>
+    <select id="subject-like" name="favourite_subject">
+        <option value="Matematik">Matematik</option>
+        <option value="Svenska">Svenska</option>
+        <option value="Fysik">Fysik</option>
+        <option value="Kemi">Kemi</option>
+    </select>
+</div>
+
+<div class="form-group" id="l">
+    <label for="message">Meddelande:</label><br>
+    <textarea id="message" name="user_message" rows="6" required></textarea>
+</div>
+<div id="l">
+<button type="submit" class="submit-button">Skicka</button>
+</div>
+   </form>
+   </section>
+    
+    <footer id="Blog">
+    <div class="blog">
+        <h1 class="title">
+            <span class="material-symbols-outlined">rocket_launch</span>
+            <span class="high">Company &amp; CO</span>
+        </h1>
+        <p>Bergsgatan 20</p>
+        <p>212 11 Malmö</p>
+        <p>Tel: +46 406641660</p>
+        <p>E-mail: info@company.com</p>
+    </div>
+    </footer>
+</body>
+</html>
