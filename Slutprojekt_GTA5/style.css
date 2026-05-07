@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+body {
+    display: grid;
+    grid-template-areas: 
+           "header"
+           "välkommen"
+           "cards";
+    margin: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(Images/gta5.webp);
+    background-size: cover;
+}
+
+h1, h2, h3, nav a{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0;
+}
+
+.sida,.card, .välkommen-section, h1, nav{
+    border: 4px solid aqua;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 0;
+}
+
+header{
+    width: 400px;
+}
+
+.välkommen-section{
+    width: 370px;
+}
+
+.card{
+    width: 250px;
+    color: white;
+}
+
+.startsida{
+    width: 417px;
+}
+
+.info, .youtubers, .discord, .fakta{
+    background-image: none;
+}
+
+a{
+    color: aqua;
+}
+
+nav a, .card a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li{
+    color: white;
+}
+
+a:hover{
+    color: green;
+}
+
+#wrapper{
+    display: flex;
+    width: 1200px;
+    margin: 0;
+}
+
+.bild{
+    max-height: 250px;
+}
+
+.sida{
+    padding: 10px;
+}
+
+.sida2{
+    border: 4px solid aqua;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-top: 164px;
+}
+
+.sida3{
+    border: 4px solid aqua;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-top: 64px;
+}
+
+@media (max-width: 768px) {
+    
+body {
+grid-template-areas: 
+           "header"
+           "välkommen"
+           "cards";
+}
+
+header, .startsida, .välkommen-section, .card, .sida, .sida2, .sida3 {
+    width: 90%;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bild{
+    width: 95%;
+    max-height: none;
+}
+
+.välkommen-section{
+    margin-bottom: 10px;
+}
+
+.card-container{
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0;
+}
+}
+
