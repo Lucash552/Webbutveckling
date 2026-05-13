@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+/* Grundläggande Styling, Typsnitt & Grid */
+body {                                 
+    display: grid;
+    grid-template-areas: 
+           "header"
+           "välkommen"
+           "cards";
+    margin: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Bakgrund som bara ska ligga på startsidan och styling på bilden */
+body.välkommen{
+    background-image: url(Images/gta5.webp);
+    background-size: cover;
+    background-position: top center;
+    min-height: 100vh; /* Ser till så att bakgrunden täcker hela skärmen */
+}
+
+/* Stil som alla dessa rubrikerna och stora texter */
+h1, h2, h3, nav a{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Layout och Containers */
+
+/* Grid-inställningar för korten på startsidan */
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    max-width: 100px;
+    margin: 0; 
+}
+
+/* Design som alla ramar med neon tema */
+.sida,.card, .välkommen-section, h1, nav{
+    border: 4px solid aqua;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 0;
+}
+
+/* Bredd justeringar för symmetri på olika element */
+header{
+    width: 400px;
+}
+
+.välkommen-section{
+    width: 370px;
+}
+
+.card{
+    width: 250px;
+    color: white;
+}
+
+.startsida{
+    width: 417px;
+}
+
+/* Länkar och Navigation */
+
+/* Tar bort bakgrundsbilden som startsidan har på dessa undersidor  */
+.info, .youtubers, .discord, .fakta{
+    background-image: none;
+}
+
+a{
+    color: aqua;
+}
+
+nav a, .card a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li{
+    color: white;
+}
+
+/* Effekt som gör att när man har musen över en länk så blir den grön */
+a:hover{
+    color: green;
+}
+
+/* Undersidor och Specifika Layouts */
+
+#wrapper{
+    display: flex;
+    width: 1200px;
+    margin: 0;
+}
+
+.bild{
+    max-height: 250px;
+}
+
+.sida{
+    padding: 10px;
+}
+
+/* Marginaler för att sätta innehåll på undersidorna */
+.sida2{
+    border: 4px solid aqua;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-top: 164px;
+}
+
+.sida3{
+    border: 4px solid aqua;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-top: 64px;
+}
+
+/* Responsiv Design (MEDIA QUERIES)
+   Anpassar layouten för mobiler och surfplattor */
+
+@media (max-width: 1024px) {
+
+header, .startsida, .välkommen-section, .card, .sida, .sida2, .sida3 {
+    width: 82%; /* Gör elementen breddare */
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column; /* Staplar innehåll vertikalt */
+    width: 100%;
+    
+}
+
+.bild{
+    width: 95%;
+    max-height: none;
+}
+
+.välkommen-section{
+    margin-bottom: 10px;
+}
+
+.välkommen{
+    background-repeat: no-repeat;
+}
+
+/* Ändrar griden till en enda kolumn för att kunna läsa bättre */
+.card-container{
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0;
+}
+}
+
